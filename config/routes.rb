@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  resources :comments
+  devise_for :members
+  resources :events
   match "/index" =>'aaacore#index', via: :get
-
-  match "/events" =>'aaacore#events', via: :get
 
   match "/shop" =>'aaacore#shop', via: :get
 

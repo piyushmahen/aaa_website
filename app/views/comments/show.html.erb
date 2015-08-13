@@ -2,18 +2,18 @@
 
 <p>
   <strong>Event:</strong>
-  <%= @comment.event_id %>
+  <%= @comments.event_id %>
 </p>
 
 <p>
   <strong>Details:</strong>
-  <%= @comment.details %>
+  <%= @comments.details %>
 </p>
 
 <p>
   <strong>Author:</strong>
-  <%= @comment.author %>
+  <%= @comments.author %>
 </p>
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path(event_id: @comment.event_id) %>
+<%= link_to 'Edit', edit_comment_path(@comments) %> |
+<%= link_to 'Back', events_path(event_id: @comments.event_id) %>
